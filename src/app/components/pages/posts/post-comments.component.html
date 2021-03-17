@@ -1,0 +1,31 @@
+<div class="wrap">
+  <h2 class="hint">Post's Comments</h2>
+
+  <div class="control-bar">
+    <input type="text" [(ngModel)]="on.body" placeholder="Commnet" />
+    <input type="text" [(ngModel)]="on.email" placeholder="Email" />
+    <input type="text" [(ngModel)]="on.name" placeholder="User Name" />
+    <button class="button" (click)="onCommentsFilter()">Apply</button>
+  </div>
+
+  <div class="main">
+    <div class="post">
+      <div class="title">
+        <h3> {{data.post?.title}}</h3>
+      </div>
+      <div class="body">{{data.post?.body}}</div>
+    </div>
+    <hr>
+    <ng-container *ngFor="let each of list.comments">
+      <div class="comments">
+        <div class="title">
+          <h4>
+            <label>{{each.name}}</label>
+            <label>{{each.email}}</label>
+          </h4>
+        </div>
+        <div class="comment-body">{{each.body}}</div>
+      </div>
+    </ng-container>
+  </div>
+</div>

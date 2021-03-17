@@ -1,0 +1,17 @@
+<div class="wrap">
+  <h2 class="hint">List of Posts</h2>
+  <div class="main">
+    <ng-container *ngFor="let each of list.posts">
+      <div class="post">
+        <div class="title">
+          <h3> {{each.title}}</h3>
+        </div>
+        <div class="body">{{each.body}}</div>
+        <div class="comments">
+          <i class="fas fa-comment-alt fa-lg" (click)="onPostComments(each)"
+            title="Comments"></i>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

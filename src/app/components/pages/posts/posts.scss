@@ -1,0 +1,45 @@
+
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+.hint {
+  font-size: 2rem;
+  font-weight: 900;
+ color: #3B3B3B;
+}
+div.wrap {
+  width: 80%;
+  min-width: 400px;
+  margin: 20px 50px;
+}
+
+div.main{
+  width: 50%;
+  min-width: 200px;
+  border: 1px solid #E1E1E1;
+  background-color: #CFCFCF;
+}
+
+div.post{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid white;
+  padding: 0px  10px;
+}
+
+div.body {
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: Courier New, monospace;
+  text-align: left;
+}
+
+div.comments{
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  i {
+    width: 100px;
+    color: blue;
+    cursor: pointer;
+  }
+}

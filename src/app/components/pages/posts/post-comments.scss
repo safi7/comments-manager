@@ -1,0 +1,84 @@
+
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+.hint {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #3B3B3B;
+}
+div.wrap {
+  width: 1000px;
+  min-width: 400px;
+  margin: 20px 50px;
+}
+
+.control-bar{
+ display: flex;
+ flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.control-bar input{
+  width: 244px;
+  background: #F7F7F7;;
+  border: 1px solid #CFCFCF;
+  border-radius: 0.3em;
+  color: #222222;;
+  display: inline-block;
+  min-height: 1.2rem;
+  padding: 0.5em;
+}
+
+div.main{
+  width: 900px;
+  min-width: 200px;
+  border: 1px solid #E1E1E1;
+  background-color: #CFCFCF;
+}
+
+div.post{
+  display: flex;
+  flex-direction: column;
+  padding: 0px  10px;
+}
+
+div.body {
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: Courier New, monospace;
+  text-align: left;
+}
+
+div.comments{
+  border-bottom: 1px solid white;
+ display: flex;
+  flex-direction: column;
+  padding: 0px  10px;
+}
+
+
+div.title label{
+  display: block;
+  margin-top: 5px;
+}
+
+div.comment-body{
+ font-size: 1.2rem;
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+
+button{
+  background: #E1E1E1;
+  border: 1px solid #CFCFCF;
+  border-radius: 0.2em;
+  color: #515151;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1;
+  padding: 0.3em 0.8em;
+  transition: 0.2s ease;
+}
